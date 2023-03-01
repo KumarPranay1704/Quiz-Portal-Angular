@@ -14,6 +14,8 @@ export class StudentRegisterComponent implements OnInit {
   email!:string;
   password!:string
   message:string = '';
+  branch!:string;
+  date!:string;
 
   ngOnInit(): void {
   }
@@ -22,9 +24,11 @@ export class StudentRegisterComponent implements OnInit {
     const regInfo={
       name:this.name,
       email:this.email,
-      password:this.password
+      password:this.password,
+      branch:this.branch,
+      joining:this.date
     }
-    this.userService.teacherRegister(regInfo).subscribe(response=>{
+    this.userService.studentRegister(regInfo).subscribe(response=>{
       this.message = response.message;
     },err=>{
       if(err.error.message === undefined){
