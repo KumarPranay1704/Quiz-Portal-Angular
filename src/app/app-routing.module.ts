@@ -20,7 +20,7 @@ const routes: Routes = [
   {path:'adminRegister',component:AdminRegisterComponent},
   {path:'login',component:LoginComponent},
 
-  {path:'loggedIn/admin/home',component:AdminHomeComponent},
+  {path:'loggedIn/admin/home',component:AdminHomeComponent,canActivate:[AuthGuardService]},
   {path:'loggedIn/admin/teacherRegister',component:TeacherRegisterComponent,canActivate:[AuthGuardService]},
   {path:'loggedIn/admin/studentRegister',component:StudentRegisterComponent,canActivate:[AuthGuardService]},
 
