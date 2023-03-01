@@ -28,6 +28,7 @@ export class StudentRegisterComponent implements OnInit {
       branch:this.branch,
       joining:this.date
     }
+    console.log(regInfo)
     this.userService.studentRegister(regInfo).subscribe(response=>{
       this.message = response.message;
     },err=>{
