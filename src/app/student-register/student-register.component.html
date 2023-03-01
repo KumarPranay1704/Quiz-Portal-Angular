@@ -14,13 +14,16 @@
           <label for="exampleInputPassword1" class="form-label">Password</label>
           <input type="password" class="form-control" id="exampleInputPassword1" name = "password" [(ngModel)]="password">
         </div>
-        <select  [(ngModel)] = "branch" name="branch" class="form-select" aria-label="Default select example">
+        <div class="mb-3">
+          <label for="exampleInputBranch1" class="form-label">Branch</label>
+          <select id="exampleInputBranch1"  [(ngModel)] = "branch" name="branch" class="form-select" aria-label="Default select example">
             <option selected>Select the Branch</option>
             <option value="cse">CSE</option>
             <option value="ece">ECE</option>
             <option value="eee">EEE</option>
             <option value="eie">EIE</option>
         </select>
+        </div>
         <div class="mb-3">
           <label for="exampleInputDate1" class="form-label">Date</label>
           <input type="date" class="form-control" id="exampleInputDate1" name = "date" [(ngModel)]="date">
