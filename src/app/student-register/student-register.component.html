@@ -1,33 +1,36 @@
-<div class="card w-50">
-    <form #logForm = "ngForm" (ngSubmit) = onSubmitForm(logForm)>
-        <h1 style="text-align: center;">Register</h1>
-        <h3>{{message}}</h3>
-        <div class="mb-3">
-            <label for="exampleInputName1" class="form-label">Name</label>
-            <input type="text" class="form-control" id="exampleInputName1" name="name" [(ngModel)]="name">
-          </div>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" name="email" [(ngModel)]="email">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" name = "password" [(ngModel)]="password">
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputBranch1" class="form-label">Branch</label>
-          <select id="exampleInputBranch1"  [(ngModel)] = "branch" name="branch" class="form-select" aria-label="Default select example">
-            <option selected>Select the Branch</option>
-            <option value="cse">CSE</option>
-            <option value="ece">ECE</option>
-            <option value="eee">EEE</option>
-            <option value="eie">EIE</option>
-        </select>
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputDate1" class="form-label">Date</label>
-          <input type="date" class="form-control" id="exampleInputDate1" name = "date" [(ngModel)]="date">
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-  </div>
+<div class="container w-50 shadow mt-2 p-5">
+  <form #logForm="ngForm" (ngSubmit)=onSubmitForm(logForm)>
+    <h1 style="text-align: center;">Register</h1>
+    <h3>{{message}}</h3>
+    <div class="mb-3">
+      <label for="exampleInputName1" class="form-label">Name</label>
+      <input type="text" class="form-control" id="exampleInputName1" name="name" [(ngModel)]="name">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" name="email" [(ngModel)]="email">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" name="password" [(ngModel)]="password">
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputBranch1" class="form-label">Branch</label>
+      <select id="exampleInputBranch1" [(ngModel)]="branch" name="branch" class="form-select"
+        aria-label="Default select example">
+        <option selected>Select the Branch</option>
+        <option value="cse">CSE</option>
+        <option value="ece">ECE</option>
+        <option value="eee">EEE</option>
+        <option value="eie">EIE</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputDate1" class="form-label">Date</label>
+      <input type="date" class="form-control" id="exampleInputDate1" name="date" [(ngModel)]="date">
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary px-3">Submit</button>
+    </div>
+  </form>
+</div>

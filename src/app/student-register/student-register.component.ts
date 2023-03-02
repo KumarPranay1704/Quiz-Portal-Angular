@@ -15,7 +15,6 @@ export class StudentRegisterComponent implements OnInit {
   password!:string;
   branch!:string;
   message:string = '';
-  branch!:string;
   date!:string;
 
   ngOnInit(): void {

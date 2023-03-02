@@ -1,4 +1,4 @@
-<div class="card w-50">
+<div class="container w-50 shadow p-5 my-5">
   <form #logForm="ngForm" (ngSubmit)=onSubmitForm(logForm)>
     <h1 style="text-align: center;">Login</h1>
     <h3>{{message}}</h3>
@@ -10,6 +10,10 @@
       <label for="exampleInputPassword1" class="form-label">Password</label>
       <input type="password" class="form-control" id="exampleInputPassword1" name="password" [(ngModel)]="password">
     </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <div class="mb-3 form-check">
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary px-5">Submit</button>
+    </div>
   </form>
 </div>
