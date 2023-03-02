@@ -12,7 +12,8 @@ export class StudentRegisterComponent implements OnInit {
   constructor(private userService:UserService) { }
   name!:string;
   email!:string;
-  password!:string
+  password!:string;
+  branch!:string;
   message:string = '';
   branch!:string;
   date!:string;
